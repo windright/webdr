@@ -75,14 +75,14 @@
     font-size: 14px;
 }
 
-#modal-form .row {
+.modalrow {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#modal-form .row .col {
+.modalrow .modalcol {
     width: 30%;
     display: inline-block;
     height: 23px;
