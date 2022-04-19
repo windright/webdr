@@ -1,0 +1,175 @@
+/* absulte定位相对于文档（即父元素为document）  fixed定位相对于window（即父元素为bom） */
+.k-modal {
+    position: fixed;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 页面蒙板 */
+.k-modal-mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.k-modal-wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.k-modal-container {
+    margin: 20px 0;
+    display: inline-block;
+    position: relative;
+    min-height: 100px;
+    min-width: 360px;
+    max-width: 80%;
+    background: white;
+    border-radius: 2px;
+    user-select: text;
+}
+
+.k-modal-header {
+    font-size: 16px;
+    padding: 16px;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.k-modal-close {
+    cursor: pointer;
+}
+
+.k-modal-close * {
+    color: rgba(0, 0, 0, 0.45);
+    transition: color 0.15s ease;
+}
+
+.k-modal-close:hover * {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.k-modal-body {
+    padding: 16px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row .col {
+    width: 30%;
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.k-modal-footer {
+    padding: 10px 16px;
+    border-top: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.k-modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 2px;
+    border: 1px solid #1890ff;
+    background: #1890ff;
+    color: white;
+    min-width: 64px;
+    cursor: pointer;
+}
+
+/*baseblock ==== ==== ==== ==== ==== ==== ==== ==== */
+.baseblock {
+    background-color: white;
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    left: 20px;
+    top: 200px;
+    z-index: 999;
+}
+
+.blockitem {
+    border: 1px solid #404041;
+    border-radius: 1px;
+}
+
+.blockitem .blocktitle {
+    padding: 6px 8px;
+    color: #ffffff;
+    background-color: #232323;
+    border-bottom: 1px solid #404041;
+    font-size: 1.15em;
+}
+
+.blockitem .blockcontent {
+    padding: 8px 8px;
+    color: black;
+}
+
+.blockitem .blockcontent {
+    padding: 8px 8px;
+    color: black;
+}
+
+.blockitem .blockcontent a {
+    color: #333C;
+    text-decoration: none;
+}
+
+.blockitem .blockcontent .order a {
+    color: orangered;
+}
+
+.blockitem .blockcontent .order span{
+    color: black;
+}
+
+.blockitem .blockcontent .videoname {
+    color: yellowgreen;
+}
+
+/* a:-webkit-any-link 自带属性会覆盖掉使用类选择器设置的 包括 color cursor text-decoration */
+.blockitem .blockcontent .url {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
