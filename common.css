@@ -128,12 +128,14 @@
     position: fixed;
     left: 20px;
     top: 200px;
+    max-width: 30%;
     z-index: 999;
 }
 
-.blockitem {
+.blockcontent {
     border: 1px solid #404041;
     border-radius: 1px;
+    color: black;
 }
 
 .blockitem .blocktitle {
@@ -144,36 +146,36 @@
     font-size: 1.15em;
 }
 
-.blockitem .blockcontent {
-    padding: 8px 8px;
-    color: black;
-}
-
-.blockitem .blockcontent {
-    padding: 8px 8px;
-    color: black;
-}
-
-.blockitem .blockcontent a {
+.blockitem a {
     color: #333C;
     text-decoration: none;
 }
 
-.blockitem .blockcontent .order a {
+.blockdetail {
+    padding: 6px 8px;
+}
+
+.blockdetail .order a {
     color: orangered;
 }
 
-.blockitem .blockcontent .order span{
+.blockdetail .order span {
     color: black;
 }
 
-.blockitem .blockcontent .videoname {
+.blockdetail .videoname {
+    white-space: nowrap;
     color: yellowgreen;
 }
 
 /* a:-webkit-any-link 自带属性会覆盖掉使用类选择器设置的 包括 color cursor text-decoration */
-.blockitem .blockcontent .url {
+.blockdetail .url {
     word-break: break-all;
     word-wrap: break-word;
+}
+
+.blockdetail .url_list {
+    max-height: 500px;
+    overflow: auto;
 }
 
