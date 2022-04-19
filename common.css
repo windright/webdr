@@ -86,13 +86,14 @@
 }
 
 .modalrow .modalcol {
-    width: 30%;
+    max-width: 30%;
     display: inline-block;
     height: 23px;
     line-height: 23px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    padding-right: 20px;
 }
 
 .k-modal-footer {
