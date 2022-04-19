@@ -1,3 +1,4 @@
+/* https://cdn.jsdelivr.net/gh/windright/webdr@main/common.css */
 /* absulte定位相对于文档（即父元素为document）  fixed定位相对于window（即父元素为bom） */
 .k-modal {
     position: fixed;
@@ -74,14 +75,14 @@
     font-size: 14px;
 }
 
-.row {
+#modal-form .row {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.row .col {
+#modal-form .row .col {
     width: 30%;
     display: inline-block;
     height: 23px;
