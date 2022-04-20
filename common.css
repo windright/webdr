@@ -165,7 +165,9 @@
 }
 
 .promptdetail .videoname {
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    word-break: break-all;
+    word-wrap: break-word;
     color: yellowgreen;
 }
 
