@@ -1,6 +1,6 @@
 /* https://cdn.jsdelivr.net/gh/windright/webdr@main/common.css */
 /* absulte定位相对于文档（即父元素为document）  fixed定位相对于window（即父元素为bom） */
-.k-modal {
+.diag-modal {
     position: fixed;
     z-index: 1000;
     animation: fadeIn 0.3s ease forwards;
@@ -16,7 +16,7 @@
 }
 
 /* 页面蒙板 */
-.k-modal-mask {
+.diag-modal-mask {
     position: fixed;
     left: 0;
     right: 0;
@@ -25,7 +25,7 @@
     background: rgba(0, 0, 0, 0.45);
 }
 
-.k-modal-wrap {
+.diag-modal-wrap {
     position: fixed;
     left: 0;
     right: 0;
@@ -36,9 +36,9 @@
     align-items: center;
 }
 
-.k-modal-container {
+.diag-modal-container {
     margin: 20px 0;
-    display: inline-block;
+    display: inline-prompt;
     position: relative;
     min-height: 100px;
     min-width: 360px;
@@ -48,7 +48,7 @@
     user-select: text;
 }
 
-.k-modal-header {
+.diag-modal-header {
     font-size: 16px;
     padding: 16px;
     border-bottom: 1px solid #f1f1f1;
@@ -57,20 +57,20 @@
     align-items: center;
 }
 
-.k-modal-close {
+.diag-modal-close {
     cursor: pointer;
 }
 
-.k-modal-close * {
+.diag-modal-close * {
     color: rgba(0, 0, 0, 0.45);
     transition: color 0.15s ease;
 }
 
-.k-modal-close:hover * {
+.diag-modal-close:hover * {
     color: rgba(0, 0, 0, 0.85);
 }
 
-.k-modal-body {
+.diag-modal-body {
     padding: 16px;
     font-size: 14px;
 }
@@ -87,7 +87,7 @@
 
 .modalrow .modalcol {
     max-width: 30%;
-    display: inline-block;
+    display: inline-prompt;
     height: 23px;
     line-height: 23px;
     white-space: nowrap;
@@ -96,14 +96,14 @@
     padding-right: 20px;
 }
 
-.k-modal-footer {
+.diag-modal-footer {
     padding: 10px 16px;
     border-top: 1px solid #f1f1f1;
     display: flex;
     justify-content: flex-end;
 }
 
-.k-modal-btn {
+.diag-modal-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,8 +117,8 @@
     cursor: pointer;
 }
 
-/*baseblock ==== ==== ==== ==== ==== ==== ==== ==== */
-.baseblock {
+/*baseprompt ==== ==== ==== ==== ==== ==== ==== ==== */
+.baseprompt {
     background-color: white;
     color: black;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -133,13 +133,13 @@
     z-index: 999;
 }
 
-.blockcontent {
+.promptcontent {
     border: 1px solid #404041;
     border-radius: 1px;
     color: black;
 }
 
-.blockitem .blocktitle {
+.promptitem .prompttitle {
     padding: 6px 8px;
     color: #ffffff;
     background-color: #232323;
@@ -147,35 +147,35 @@
     font-size: 1.15em;
 }
 
-.blockitem a {
+.promptitem a {
     color: #333C;
     text-decoration: none;
 }
 
-.blockdetail {
+.promptdetail {
     padding: 6px 8px;
 }
 
-.blockdetail .order a {
+.promptdetail .order a {
     color: orangered;
 }
 
-.blockdetail .order span {
+.promptdetail .order span {
     color: black;
 }
 
-.blockdetail .videoname {
+.promptdetail .videoname {
     white-space: nowrap;
     color: yellowgreen;
 }
 
 /* a:-webkit-any-link 自带属性会覆盖掉使用类选择器设置的 包括 color cursor text-decoration */
-.blockdetail .url {
+.promptdetail .url {
     word-break: break-all;
     word-wrap: break-word;
 }
 
-.blockdetail .url_list {
+.promptdetail .url_list {
     max-height: 500px;
     overflow: auto;
 }
