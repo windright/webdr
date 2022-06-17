@@ -74,6 +74,7 @@
 .diag-modal-body {
     padding: 16px;
     font-size: 14px;
+	overflow: auto;
 }
 
 .modalrow {
