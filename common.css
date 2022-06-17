@@ -42,7 +42,6 @@
     position: relative;
     min-height: 100px;
     min-width: 360px;
-	max-height: 70%;
     max-width: 80%;
     background: white;
     border-radius: 2px;
@@ -74,7 +73,8 @@
 .diag-modal-body {
     padding: 16px;
     font-size: 14px;
-	overflow: auto;
+	max-height: 500px;
+    overflow: auto;
 }
 
 .modalrow {
